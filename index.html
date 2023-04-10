@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Flux</title>
+	<style type="text/css">
+		canvas{
+			/*background: black;*/
+			position: absolute;
+		
+			
+		}
+		/*#tunnel-layer{
+			z-index: 5;
+			width: 90% !important;
+			left: 5%;
+		}*/
+		/*#map-layer*/#room{
+			position: absolute;
+			/*z-index: 10;
+			width: 30% !important;
+			left: 10%;*/
+			background-image: url(room-0.png);
+			background-size: 100%;
+			z-index: 5;
+			width: 90% !important;
+			
+		}
+		/*#map-layer*/#dead{
+			position: absolute;
+			/*z-index: 10;
+			width: 30% !important;
+			left: 10%;*/
+			background-image: url(dead.png);
+			background-size: 100%;
+			z-index: 10;
+			width: 90% !important;
+			display: none;
+			
+		}
+		.character{
+			z-index: 15;
+		}
+		div{
+			width: 90%/* !important*/;
+			margin-left: 5%;
+			margin-right: 5%;
+
+		}
+		/*#map-layer-obstacles{
+			z-index: -15;
+			width: 30% !important;
+			left: 10%;
+		}*/
+
+	</style>
+</head>
+<body onload="onloadDoc();">
+	<!-- <canvas id="tunnel-layer" width="2000" height="1000"></canvas> -->
+	<!-- <canvas id="map-layer" class="maps"  width="1920" height="1080"></canvas> -->
+	<!-- <picture id="map-layer" class="maps"  width="1920" height="1080"></canvas> -->
+	<!-- <canvas id="map-layer-obstacles" class="maps" width="2000" height="1000"></canvas> -->
+	<div>
+		<img id="room" src="room-0.png" alt="ROOM"><!-- style="width:auto;" -->
+		<img id="dead" src="dead.png" alt="DEAD"><!-- style="width:auto;" -->
+	</div>
+	<div>
+		<img class="character" id="MC" src="MC.png" alt="MC">
+	</div>
+	<script type="text/javascript" src="3DEngine.js"></script>
+</body>
+</html>
